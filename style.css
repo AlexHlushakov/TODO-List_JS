@@ -1,0 +1,116 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background: -webkit-linear-gradient(135deg, #6977f3, #0b167a);
+}
+
+.container {
+  width: 40%;
+  min-width: 400px;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 30px 40px;
+}
+
+#newtask {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  font-weight: 500;
+  background-color: #fcfcfc;
+  padding: 30px 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 15px 30px #000;
+  box-shadow: 0 15px 30px #000;
+}
+
+#newtask input {
+  width: 75%;
+  height: 45px;
+  font-size: 18px;
+  border: 2px solid #d4d1d1;
+}
+
+#newtask button {
+  width: 20%;
+  height: 45px;
+  border-radius: 5px;
+  font-size: 18px;
+  background-color: #3d55df;
+  color: #e9e5e5;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+#task-list {
+  background-color: white;
+  margin-top: 50px;
+  padding: 30px 20px;
+  -webkit-box-shadow: 0 15px 30px #000;
+  box-shadow: 0 15px 30px #000;
+  border-radius: 10px;
+  width: 100%;
+}
+
+#task-list h2 {
+  text-align: center;
+}
+
+.task {
+  background-color: #fff;
+  height: 50px;
+  padding: 5px 10px;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-bottom: 1px solid #000;
+  cursor: pointer;
+}
+
+.task span {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.task button {
+  background-color: #b81010;
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.task button i {
+  color: #fff;
+  font-size: 18px;
+}
+
+.completed {
+  text-decoration: line-through;
+}
